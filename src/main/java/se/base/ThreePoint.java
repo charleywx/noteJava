@@ -54,9 +54,10 @@ public class ThreePoint {
     }
     
     /**
-     输出结果：
-     张三
-     李四
+     * 输出结果：
+     * 张三
+     * 李四
+     *
      * @param arguments
      */
     public static void test2(Person... arguments) {
