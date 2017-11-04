@@ -293,40 +293,6 @@ public class DateUtil {
         return 0;
     }
 
-    public static String formatCalendar(Calendar ca, String type) {
-        String str = "";
-        switch (type) {
-            case "yyyyMMdd":
-                str = ca.get(Calendar.YEAR)
-                        + ""
-                        + ((ca.get(Calendar.MONTH) + 1) < 10 ? "0" + (ca.get(Calendar.MONTH) + 1)
-                        : (ca.get(Calendar.MONTH) + 1))
-                        + ""
-                        + (ca.get(Calendar.DAY_OF_MONTH) < 10 ? "0" + ca.get(Calendar.DAY_OF_MONTH) : ca
-                        .get(Calendar.DAY_OF_MONTH));
-                break;
-            case "HHmmss":
-                str = (ca.get(Calendar.HOUR_OF_DAY) < 10 ? "0" + ca.get(Calendar.HOUR_OF_DAY) : ca
-                        .get(Calendar.HOUR_OF_DAY))
-                        + ""
-                        + (ca.get(Calendar.MINUTE) < 10 ? "0" + ca.get(Calendar.MINUTE) : "" + ca.get(Calendar.MINUTE))
-                        + ""
-                        + (ca.get(Calendar.SECOND) < 10 ? "0" + ca.get(Calendar.SECOND) : "" + ca.get(Calendar.SECOND));
-                break;
-            case "HH":
-                str = ca.get(Calendar.HOUR_OF_DAY) < 10 ? "0" + ca.get(Calendar.HOUR_OF_DAY) : ""
-                        + ca.get(Calendar.HOUR_OF_DAY);
-                break;
-            case "mm":
-                str = ca.get(Calendar.MINUTE) < 10 ? "0" + ca.get(Calendar.MINUTE) : "" + ca.get(Calendar.MINUTE);
-                break;
-            case "ss":
-                str = ca.get(Calendar.SECOND) < 10 ? "0" + ca.get(Calendar.SECOND) : "" + ca.get(Calendar.SECOND);
-                break;
-        }
-        return str;
-    }
-
     public static void main(String[] args) throws Exception {
 //        System.out.println(com.charley.common.util.DateUtil.getDateStr(-1));
 

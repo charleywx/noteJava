@@ -86,7 +86,7 @@ public class FileUtil {
      * @return List<String>
      */
     public static List<String> getChildFile(String path) {
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
         String[] files = new File(path).list();
         for (String s : files) {
             if (isFile(path + File.separator + s)) {
@@ -103,7 +103,7 @@ public class FileUtil {
      * @return List<String>
      */
     public static List<String> getChildDirectory(String path) {
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
         String[] files = new File(path).list();
         for (String s : files) {
             if (new File(s).isDirectory()) {

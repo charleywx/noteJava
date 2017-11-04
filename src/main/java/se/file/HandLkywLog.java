@@ -12,7 +12,7 @@ import java.util.Set;
 public class HandLkywLog {
     public static void main(String[] args) {
         List<String> list = FileUtil.readFileByLineToList("C:\\Users\\shenb\\Desktop\\LkywGps.log");
-        Set<String> set = new HashSet<>();
+        Set<String> set = new HashSet<String>();
         for(String s: list) {
             if(StringUtil.isBlank(s)) continue;
             set.add(s.split(",")[7] + ",");
