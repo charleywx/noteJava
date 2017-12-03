@@ -294,7 +294,7 @@ public class DateUtil {
     }
 
     public static void main(String[] args) throws Exception {
-//        System.out.println(com.charley.common.util.DateUtil.getDateStr(-1));
+       System.out.println(getDateStr(-1));
 
     }
 }
